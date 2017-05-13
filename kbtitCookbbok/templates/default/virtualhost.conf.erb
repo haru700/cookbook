@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+  Sercer Admin serveradmin@<%= @env_hostname %>
+  DocumentRoot <%= @node.apache.documentroot %>/<%= @env_hostname %>
+  ServerName <%= @env_hostname %>
+  ErrorLog logs/<%= @env_hostname %>-error_log
+  CustomLog logs/<%= @env_hostname %>-access_log conbined
+</VirtualHost>

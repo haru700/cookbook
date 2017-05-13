@@ -1,0 +1,14 @@
+{
+  "name": "setup_example_program",
+  "override_attributes":{
+    "apache":{
+      "documentroot" : "/var/www"
+    }
+  },
+  "json_class": "Chef::Role",
+  "description": "Setup Examplep Program",
+  "chef_type": "role",
+  "run_list":[
+    "recipe[main::default]"
+  ]
+}
